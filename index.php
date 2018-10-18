@@ -95,8 +95,8 @@
 				<div class="title">
 					<span>Source codes</span>
 					<div class="lien">
-						<a href="">My portfolio</a>
-						<a href="">Shortener</a>
+						<a href="https://github.com/JackDarkWeb/jackPortfolio">My portfolio</a>
+						<a href="https://github.com/JackDarkWeb/url-shortener">Shortener</a>
 						<a href="">RoyalNews</a>
 						<a href="">Babor</a>
 						<a href="">Facture Flash Service</a>
