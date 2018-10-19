@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>My projects</title>
-		
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		
 		 <!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -29,41 +29,38 @@
 			#menu{
 				float: right;
 			}
-			.content{
-				clear :right;
-				text-align:center;
-			}
+            #menu span a{
+                color: #636b6f;
+                text-decoration: none;
+            }
+            #menu .title ul{
+                list-style: none;
+            }
 			
 			#menu .title{
 				display: inline-block;
 				vertical-align: top;
-				padding: 20px 0 0 20px;
+				padding: 10px 3px 0 10px;
 			}
-			#menu a{
-				text-decoration: none;
-				color: #636b6f;
-			}
-			#menu .lien a{
-				display: block;
-			}
-			#menu .lien a:hover, .links > a:hover{
-				color: orange;
-				text-decoration: underline;
-				font-weight: bold;
-				font-style: italic;
-			}
-			#menu .lien{
-				position: relative;
-				top: 10px;
-			}
-			#menu span{
+            .addClass a{
+                font-weight: bold;
+                font-style: italic;
+                color: orange;
+                text-decoration: underline;
+            }
+
+			#menu span, #menu .code_source{
 				cursor: pointer;
 				color: #636b6f;
 				font-size: 20px;
 				font-weight: 600;
 				text-transform: uppercase;
 			}
-			
+
+            .content{
+                clear :right;
+                text-align:center;
+            }
 			.links > a{
 				color: #636b6f;
                 padding: 0 25px;
@@ -73,6 +70,9 @@
                 text-decoration: none;
                 text-transform: uppercase;
 			}
+            .links a:hover{
+                color: orange;
+            }
 			.m-b-md{
 				
 				color: #636b6f;
@@ -93,15 +93,15 @@
 				</div>
 
 				<div class="title">
-					<span>Source codes</span>
-					<div class="lien">
-						<a href="https://github.com/JackDarkWeb/jackPortfolio">My portfolio</a>
-						<a href="https://github.com/JackDarkWeb/url-shortener">Shortener</a>
-						<a href="">RoyalNews</a>
-						<a href="">Babor</a>
-						<a href="">Facture Flash Service</a>
-						<a href="">Waba</a>
-					</div>
+					<ul>
+                        <li class="code_source">Source codes</li>
+						<li><a href="https://github.com/JackDarkWeb/jackPortfolio">My portfolio</a></li>
+						<li><a href="https://github.com/JackDarkWeb/url-shortener">Shortener</a></li>
+						<li><a href="">RoyalNews</a></li>
+						<li><a href="">Babor</a></li>
+						<li><a href="">Facture Flash Service</a></li>
+						<li><a href="">Waba</a></li>
+					</ul>
 				</div>
             </div>
             
@@ -123,15 +123,6 @@
 			
         </div>
 		
-		<script>
-		     $(function(){
-				 
-				$('#menu .lien').hide();
-				$('#menu .title:last-child span').click(function(){
-					
-					$('#menu .lien').toggle('slow');
-				});
-			 });
-		</script>
+		<script src="jquery_code.js"></script>
     </body>
 </html>
